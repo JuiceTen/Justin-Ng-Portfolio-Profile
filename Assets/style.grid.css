@@ -147,6 +147,7 @@ aside h2 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
 /* responsive css */
