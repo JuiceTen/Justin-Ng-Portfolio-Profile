@@ -4,9 +4,10 @@
     <head>
         <meta charset="UTC-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-height, initial-scale=1.0">
         <title>Justin's Coding Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="/Assets/reset.css">
-        <link rel="stylesheet" type="text/css" href="/Assets/style.grid.css">
+        <link rel="resetstylesheet" type="text/css" href="./Assets/reset.css">
+        <link rel="stylesheet" type="text/css" href="./Assets/style.grid.css">
     </head>
 
     <body>
@@ -17,108 +18,129 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#about-me">About me</a>
+                        <a id="about" href="#about-me">About me</a>
                     </li>
 
                     <li>
-                        <a href="#projects">Projects</a>
+                        <a id="proj" href="#projects">Projects</a>
                     </li>            
 
                     <li>
-                        <a href="#contacts">Contact</a>
+                        <a id="cont" href="#contacts">Contact</a>
                     </li>
 
                     <li>
-                        <a href="#resume">Resume</a>
+                        <a id="res" href="#resume">Resume</a>
                     </li>
                 </ul>
             </nav>
         </header>
-
-        <div class="background-image" role="img"></div>
+    
+    
 
         <main>
-            <aside>
-                <h2>About Me</h2>
-            </aside>
 
-            <section id="about-me">
-                <p>
-                <img src="/Assets/images/57972730_351274962260387_3988276622542810488_n.jpg" alt="photo of Justin Ng" />
-                
-                I am an environmental justice advocate for sustainabile technologies. I wish to combat global climate change and through information technologies as it is an important skill to reach a more global platform. Enviornmental agencies, federal, non-profit, and for-profit, are lacking behind in terms of information services and web/app development. In order to help field researches and other enviornmental scientists reach a wider audience and increase their working efficiency, my goal is to design apps/websites that meet the need for this ever expanding demand.
-                </p>
+            <section class="center">
+                <h3>Welcome to my portfolio Page</h3>
+                <p> Please click on any of the links in the navigation bar to find more details</p>
             </section>
 
-            <aside>
-                <h2>Projects</h2>
-            </aside>
-
-            <section id="projects">
-                <div id="row-1">
-                    <div class="photo-1">
-                        <a href="https://github.com/JuiceTen?tab=repositories" target="_blank">
-                            <div class="layer">
-                                <span data-descr="Project 1"></span><img class="project-1" src="/Assets/images/drawings.jpg" alt="animal drawings"/></span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div id="row-2">
-                    <div class="photo-2">
-                        <a href="https://github.com/JuiceTen?tab=repositories" target="_blank">
-                            <div class="layer">
-                                <span data-descr="Project 2"><img class="project-2" src="/Assets/images/drawings.jpg" alt="animal drawings"/></span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="photo-3">
-                        <a href="https://github.com/JuiceTen?tab=repositories" target="_blank">
-                            <div class="layer">
-                                <span data-descr="Project 3"><img class="project-3" src="/assets/images/drawings.jpg" alt="animal drawings"/></span>
-                            </div>
-                        </a>
-                    </div>
+            <section id="about-me" class="hide">
+                <div class="contactwrap">
+                    <aside>
+                        <h2>About Me</h2>
+                    </aside>
+                    <p>
+                    <img src="/Assets/images/57972730_351274962260387_3988276622542810488_n.jpg" alt="photo of Justin Ng" />
+                    
+                    I am an environmental justice advocate for sustainabile technologies. I wish to combat global climate change and through information technologies as it is an important skill to reach a more global platform. Enviornmental agencies, federal, non-profit, and for-profit, are lacking behind in terms of information services and web/app development. In order to help field researches and other enviornmental scientists reach a wider audience and increase their working efficiency, my goal is to design apps/websites that meet the need for this ever expanding demand.
+                    </p>
                 </div>
             </section>
 
 
-            <aside>
-                <h2>Contacts</h2>
-            </aside>
+            <section id="projects" class="hide">
+                <div class="contactwrap">
+                    <aside>
+                        <h2>Projects</h2>
+                    </aside>
+                    <div id="row-1">
+                        <div class="photo-1">
+                            <a href="https://github.com/JuiceTen/Pokemon-Battle-Theme" target="_blank">
+                                <div class="layer">
+                                    <span data-descr="PokeTeams"></span><img class="project-1" src="/Assets/images/poketeams logo.png" alt="animal drawings"/></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
-            <section id="contacts">
-                <ul>
-                    <li>
-                        Email: <a href="mailto:ng.justin07@gmail.com">ng.justin07@gmail.com</a>
-                    </li>
+                    <div id="row-2" >
+                        <div class="photo-2">
+                            <a href="https://github.com/JuiceTen?tab=repositories" target="_blank">
+                                <div class="layer">
+                                    <span data-descr="Project 2"><img class="project-2" src="/Assets/images/drawings.jpg" alt="animal drawings"/></span>
+                                </div>
+                            </a>
+                        </div>
 
-                    <li>
-                         Phone: (in-progress)
-                    </li>
-
-                    <li>
-                        <a href="instagram.com/jus10ng">📷</a>
-                    </li>
-                </ul>
+                        <div class="photo-3">
+                            <a href="https://github.com/JuiceTen?tab=repositories" target="_blank">
+                                <div class="layer">
+                                    <span data-descr="Project 3"><img class="project-3" src="/assets/images/drawings.jpg" alt="animal drawings"/></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
 
+            <section id="contacts" class="hide">
+                <div class="contactwrap">
+                    <aside>
+                        <h2>Contacts</h2>
+                    </aside>
+                </br>                
+                </br>
+                    <ul>
+ 
+                        <li>
+                            Email: <a href="mailto:ng.justin07@gmail.com">ng.justin07@gmail.com</a>
+                        </li>
 
-            <aside>
-                <h2>Resume</h2>
-            </aside>
+                        <li>
+                            Phone: 347-241-1361
+                        </li>
 
-            <section id="resume">
-                <p>
-                    Resume (work in progress)
-                </p>
+                        <li>
+                            <a href="instagram.com/jus10ng">📷</a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/JuiceTen?tab=repositories">Git Hub</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+       
+            <section id="resume" class="hide">
+                <div class="contactwrap">
+                    <aside>
+                        <h2>Resume</h2>
+                    </aside>
+                    </br>
+                    </br>
+                    <a id="download" href="./Assets/Justin-Ng.pdf" target="_blank"> Resume</a>
+                </div>
             </section>
         </main>
 
-        <footer>
+        <footer class = "hide">
             <a href="#">Back to Top</a>
         </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./Assets/JavaScript/script.js"></script>
+        <script src="./Assets/JavaScript/pages.js"></script>
     </body>
 </html>
