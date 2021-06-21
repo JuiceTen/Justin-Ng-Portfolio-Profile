@@ -13,8 +13,9 @@ fetch("./Assets/Justin-Ng.pdf")
     document.body.appendChild(a);
     a.click();
     window.URL.revokeObjectURL(url);
-    console.log('your file has downloaded!'); // or you know, something with better UX...
+    console.log('your file has downloaded!');
   })
   .catch(() => console.log('oh no!'));
 }
 download.on("click", pdfDownload);
+

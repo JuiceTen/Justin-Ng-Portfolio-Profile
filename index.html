@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-height, initial-scale=1.0">
         <title>Justin's Coding Portfolio</title>
         <link rel="resetstylesheet" type="text/css" href="./Assets/reset.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="./Assets/style.grid.css">
     </head>
 
@@ -68,7 +69,7 @@
                         <div class="photo-1">
                             <a href="https://github.com/JuiceTen/Pokemon-Battle-Theme" target="_blank">
                                 <div class="layer">
-                                    <span data-descr="PokeTeams"></span><img class="project-1" src="./Assets/images/poketeamslogo.png" alt="animal drawings"/></span>
+                                    <span data-descr="PokeTeams"><img class="project-1" src="./Assets/images/poketeamslogo.png" alt="animal drawings"/></span>
                                 </div>
                             </a>
                         </div>
@@ -129,15 +130,37 @@
                     </aside>
                     </br>
                     </br>
-                    <a id="download" href="./Assets/Justin-Ng.pdf" target="_blank"> Resume</a>
+
+                    <!-- <img id="resumePhoto" src="./Assets/images/resume_photo.PNG" alt="resume photo"> -->
+                    <div class="btnCont">
+                        <!-- <button type="button" class="btn btn-primary" id="modalBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> -->
+
+                                <img id="resumePhoto" src="./Assets/images/resume_photo.PNG" alt="resume photo" data-bs-target="#staticBackdrop" data-bs-toggle="modal">
+
+                        <!-- </button> -->
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content modalBox">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Resume</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-dialog modal-dialog-centered modal-xl">
+                                <img id="modalCont" src="./Assets/images/resume_photo.PNG" alt = "resume photo">
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"><a href="./Assets/Justin-Ng.pdf" target="_blank">View</a></button></button>
+                            <button type="button" class="btn btn-primary"><a id="download" href="#"> Download</a></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
             </section>
-
         </main>
-        <footer class = "hide">
-             <a href="#">Back to Top</a>
-        </footer>
-
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./Assets/JavaScript/script.js"></script>
