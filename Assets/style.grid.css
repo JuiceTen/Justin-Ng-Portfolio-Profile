@@ -12,7 +12,8 @@ body {
     margin: 0 auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#background{
+
+#background {
     height: 100vh;
     background-image: url("https://raw.githubusercontent.com/JuiceTen/Justin-Ng-Portfolio-Profile/main/Assets/images/44381638_183160999298761_8060013756369710375_n.jpg");
     background-size: cover;
@@ -20,8 +21,8 @@ body {
     background-attachment: fixed;
     background-position: top;
     background-color: black;
-
 }
+
 p {
     padding: 12px;
     line-height: 1.5;
