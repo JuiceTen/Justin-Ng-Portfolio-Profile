@@ -15,7 +15,7 @@ body {
 
 #background {
   height: 100vh;
-  background-image: url("./Components/images/44381638_183160999298761_8060013756369710375_n.jpg");
+  background-image: url("./Components/images/backgroundPhoto.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
