@@ -1,13 +1,16 @@
 import React from 'react';
 import Profile from '../images/57972730_351274962260387_3988276622542810488_n.jpg'
+import './about.css'
 
 function About() {
 
     return(
+        <div id='background'>
         <section id="about-me" className="hide">
                 <div className="contactwrap">
-                   
+                   <aside>
                     <h2>About Me</h2>
+                    </aside>
                     
                     <p>
                     <img src={Profile} alt="Me" />
@@ -16,6 +19,7 @@ function About() {
                     </p>
                 </div>
             </section>
+            </div>
     )
 }
 

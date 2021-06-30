@@ -1,8 +1,11 @@
 import React from 'react';
+import './Nav.css'
 
 function Nav() {
 
     return(
+        <header>
+            <h1>Justin Ng's Portfolio Page</h1>
         <nav>
             <ul>
                 <li>
@@ -19,6 +22,7 @@ function Nav() {
                 </li>
             </ul>
         </nav>
+        </header>
     )
 }
 

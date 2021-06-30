@@ -1,11 +1,34 @@
 import React from 'react';
 import resumePhoto from '../images/resume_photo.PNG'
-
+import './resume.css'
+import resumePDF from '../images/Justin-Ng.pdf'
 function Resume() {
 
+
+    function pdfDownload() {
+        fetch(resumePDF)
+        .then(resp => resp.blob())
+        .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            // the filename you want
+            a.download = 'Justin-Ng-Resume.pdf';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            console.log('your file has downloaded!');
+        })
+        .catch(() => console.log('oh no!'));
+        }
+
+
+
     return(
-        <section id="resume" class="hide">
-                <div class="contactwrap">
+        <div id='background'>
+        <section id="resume" className="hide">
+                <div className="contactwrap">
                     <aside>
                         <h2>Resume</h2>
                     </aside>
@@ -13,7 +36,7 @@ function Resume() {
                     <br/>
 
                     
-                    <div class="btnCont">
+                    <div className="btnCont">
                     
 
                     <img id="resumePhoto" src={resumePhoto} alt="resume " data-bs-target="#staticBackdrop" data-bs-toggle="modal"/>
@@ -21,25 +44,26 @@ function Resume() {
   
                     </div>
                
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-xl">
-                        <div class="modal-content modalBox">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Resume</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div className="modal-dialog modal-dialog-centered modal-xl">
+                        <div className="modal-content modalBox">
+                            <div className="modal-header">
+                            <h5 className="modal-title" id="staticBackdropLabel">Resume</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div className="modal-dialog modal-dialog-centered modal-xl">
                                 <img id="modalCont" src={resumePhoto} alt = "resume"/>
                             </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-primary"><a href={resumePhoto} target="_blank" rel='noreferrer'>View</a></button>
-                            <button type="button" class="btn btn-primary" id='download'> Download </button>
+                            <div className="modal-footer">
+                            <button type="button" className="btn btn-primary"><a href={resumePhoto} target="_blank" rel='noreferrer' id='view'>View</a></button>
+                            <button type="button" className="btn btn-primary" id='download' onClick={pdfDownload}> Download </button>
                             </div>
                         </div>
                         </div>
                     </div>
                     </div>
             </section>
+            </div>
     )
 }
 

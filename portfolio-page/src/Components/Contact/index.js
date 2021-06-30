@@ -1,9 +1,13 @@
 import React from 'react'
+import './contact.css'
+import GitHubButton from 'react-github-btn'
+import instagramButton from '../images/instagram-button.jpg'
 
 function Contact() {
 
     return(
-        <section id="contacts" className="hide">
+        <div id='background'>
+        <section id="contacts" >
                 <div className="contactwrap">
                     <aside>
                         <h2>Contacts</h2>
@@ -14,7 +18,7 @@ function Contact() {
                     <ul>
  
                         <li>
-                            Email: <a href="mailto:ng.justin07@gmail.com">ng.justin07@gmail.com</a>
+                            <button className='round'><a href="mailto:ng.justin07@gmail.com">📧</a></button>
                         </li>
 
                         <li>
@@ -22,15 +26,17 @@ function Contact() {
                         </li>
 
                         <li>
-                            <a href="instagram.com/jus10ng">📷</a>
+                            <button className='round'><a href="instagram.com/jus10ng"><img src = {instagramButton} alt='instagram logo'/></a></button>
                         </li>
 
                         <li>
-                            <a href="https://github.com/JuiceTen?tab=repositories">Git Hub</a>
+                        
+                        <GitHubButton href="https://github.com/juiceten" aria-label="Follow @juiceten on GitHub">Follow @juiceten</GitHubButton>
                         </li>
                     </ul>
                 </div>
             </section>
+            </div>
     )
 }
 

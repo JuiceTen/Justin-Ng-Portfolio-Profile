@@ -3,7 +3,7 @@ import About from './Components/About/index'
 import Project from './Components/Project/index'
 import Contact from './Components/Contact/index'
 import Resume from './Components/Resume/index'
-
+import Home from './Components/Home/index'
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -12,35 +12,42 @@ import {
 } from 'react-router-dom';
 import './App.css';
 
+
 function App() {
   return (
     <Router>
-    <div>
+    <div id = 'background'>
     <Nav />
-
+    <main>
     <Switch>
-      <Route path='/about'>
+      <Route exact path='/'>
+        <Home/>
+      </Route>
+    </Switch>
+    <Switch>
+      <Route exact path='/about'>
         <About />
       </Route>
     </Switch>
     
     <Switch>
-      <Route path='/project'>
+      <Route exact path='/project'>
         <Project />
       </Route>
     </Switch>
     
     <Switch>
-      <Route path='/contact'>
+      <Route exact path='/contact'>
         <Contact />
       </Route>
     </Switch>
 
     <Switch>
-      <Route path='/resume'>
+      <Route exact path='/resume'>
         <Resume />
       </Route>
     </Switch>
+    </main>
    
     </div>
     </Router>

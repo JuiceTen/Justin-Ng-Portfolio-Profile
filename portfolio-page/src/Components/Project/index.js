@@ -1,9 +1,11 @@
 import React from 'react';
 import Pokemon from '../images/poketeamslogo.png'
 import Default from '../images/drawings.jpg'
+import './project.css';
 function Project() {
 
     return (
+        <div id='background'>
         <section id="projects" className="hide">
                     <div className="contactwrap">
                         <aside>
@@ -38,6 +40,7 @@ function Project() {
                         </div>
                     </div>
                 </section>
+                </div>
     )
 }
 
