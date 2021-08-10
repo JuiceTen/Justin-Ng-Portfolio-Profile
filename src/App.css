@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-border-colors: rgb(115, 206, 236);
+  --primary-color-scheme: rgb(20, 20, 139);
+  --secondary-text-color: rgb(185, 134, 24);
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#background {
+  height: 100vh;
+  background-image: url("./Components/images/backgroundPhoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-color: black;
+}
+
+p {
+  padding: 12px;
+  line-height: 1.5;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (max-width: 778px) {
+  main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
