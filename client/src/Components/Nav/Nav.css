@@ -1,0 +1,44 @@
+:root {
+    --primary-border-colors: rgb(115, 206, 236);
+    --primary-color-scheme: rgb(20, 20, 139);
+    --secondary-text-color: rgb(185, 134, 24);
+}
+
+
+
+div nav ul li {
+    display: table-cell;
+    padding: 10px;
+    background-color: transparent;
+    vertical-align: middle;
+}
+
+div a {
+    color: var(--secondary-text-color);
+    /* text-decoration: none; */
+}
+
+div nav ul li:hover {
+    background-color: rgba(128, 128, 128, 0.164);
+    border-radius: 2px;
+}
+
+div h1{
+    display: inline-block;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 778px) {
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    div nav {
+        align-items: center;
+        float: none;
+        text-align: center;
+    }
+}

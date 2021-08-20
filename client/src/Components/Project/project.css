@@ -1,0 +1,56 @@
+#row-1, #row-2 {
+    display: flex;
+}
+
+
+.photo-1 {
+    width: 100%;
+    padding: 20px;
+}
+
+.photo-2, .photo-3 {
+    width: 50%;
+    padding:20px;
+}
+
+.project-1 {
+    height: 300px;
+    width: 100%;
+}
+
+.project-2, .project-3 {
+    height: 150px;
+    width: 100%;
+}
+
+.layer{
+    position: relative;
+    border: 3px solid rgb(117, 210, 241);
+}
+
+.layer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(23, 0, 155, 0.7);
+}
+
+.layer:hover::after {
+    content: "";
+    background-color: transparent;
+}
+
+span[data-descr]::after {
+    content: attr(data-descr);
+    position: absolute;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    background-color: rgb(117, 210, 241);
+    left: 0;
+    bottom: 50px;
+    z-index: 1;
+    padding: 5px;
+}

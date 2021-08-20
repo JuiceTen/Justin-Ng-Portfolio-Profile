@@ -1,0 +1,44 @@
+.section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+#container {
+align-self: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.run .circle{
+    animation-name: circle;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes identifier {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

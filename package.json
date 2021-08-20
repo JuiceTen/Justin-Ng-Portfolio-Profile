@@ -1,45 +1,28 @@
 {
-  "name": "portfolio-page",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://juiceten.github.io/Justin-Ng-Portfolio-Profile/",
+  "name": "Justin-Ng-Portfolio-Profile",
+  "version": "1.0.0",
+  "description": "This repo contains my personal portfolio page that can easible updated with any completed and ongoing projects. The design layout is responsive for phone screens and will look similar for tablets bigger than 768px. The layout will change to a full column with the titles of each section being displayed above its content. The nav bar is also responsive and its background will display a gray background when hovered over by mouse. Currently there are no completed projects linked to the page and each project will redirect the user, in a new tab, to my github repo.",
+  "main": "server.js",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "bootstrap": "^5.0.1",
-    "gh-pages": "^3.2.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-github-btn": "^1.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.13.7",
+    "path": "^0.12.7"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuiceTen/Justin-Ng-Portfolio-Profile.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuiceTen/Justin-Ng-Portfolio-Profile/issues"
+  },
+  "homepage": "https://github.com/JuiceTen/Justin-Ng-Portfolio-Profile#readme"
 }
