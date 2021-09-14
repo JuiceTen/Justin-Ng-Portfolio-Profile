@@ -4,8 +4,7 @@ import GitHubButton from 'react-github-btn'
 import instagramButton from '../images/instagram-button.jpg'
 import Nav from '../Nav'
 import { motion } from 'framer-motion'
-import axios from 'axios'
-import Realm from 'realm'
+
 
 function Contact() {
     const modal = useRef()
