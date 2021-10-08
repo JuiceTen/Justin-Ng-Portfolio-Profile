@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const cors = require('cors')
-const routes = require('./routes')
+const routes = require('./routes/route/aws.js')
 
 require('dotenv').config()
 
@@ -15,9 +15,6 @@ app.use(express.urlencoded({extended: true}));
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, "./client/build")))
 }
-app.get("/hello",(req, res) => {
-    res.status(200).send('hello')
-})
 
 app.use(routes);
 

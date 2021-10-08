@@ -1,10 +1,16 @@
 const router = require('express').Router()
 const aws = require('aws-sdk')
+const path = require('path')
 
 const ses = new aws.SES({region: 'us-west-2'})
 
+if (process.env.NODE_ENV === "production") {
+    router.get("*", function (req, res) {
+      res.sendFile(path.join(__dirname, "../client/build/index.html"));
+    });
+  }
 
-router.post('/', (req, res) => {
+router.post('/email', (req, res) => {
     const {email, message, name} = req.body
 
     sesSend(process.env.Email || 'ng.justin07@gmail.com', email, message, name)

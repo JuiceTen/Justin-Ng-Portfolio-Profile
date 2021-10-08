@@ -19,7 +19,7 @@ function Contact() {
         e.preventDefault();
 
        if(email && name && message) {
-            const response = await fetch('/api/email', {
+            const response = await fetch('/email', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'
@@ -32,10 +32,10 @@ function Contact() {
                 })
                 
             })
-            const res = response
+            const res= response
 
 
-            if (res.ok) {
+            if (response.ok) {
                 console.log(res)
                 // document.location.replace('/contact')
                 
@@ -97,7 +97,7 @@ function Contact() {
                             </textarea>
                             
                             <div className='buttonContainer'>
-                            <button className='send' value='submit'>Send</button>
+                            <button className='send' value='submit' onClick={hideModal}>Send</button>
                             </div>
                        </form>
                        </div>
