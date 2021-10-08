@@ -9,9 +9,12 @@
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
-  
+  "engines": {
+    "node": "15.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JuiceTen/Justin-Ng-Portfolio-Profile.git"
